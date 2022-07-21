@@ -10,7 +10,7 @@
     background-color: black;
     color: white;
     display: flex;
-    height: 80vh;
+    min-height: 70vh;
     margin: 2% 4%;
     border-radius: 15px;
 }
@@ -47,6 +47,18 @@ p {
 .banner-image img {
     width: 100%;
     height: 100%;
+}
+
+.banner:hover h1 {
+    color: burlywood;
+}
+
+.banner:hover p {
+    color: burlywood;
+}
+
+.banner:hover a {
+    color: burlywood;
 }
 
 /*--------------- main style -------------------- */
@@ -190,7 +202,7 @@ p {
 #view-btn {
     text-align: center;
     margin-bottom: 50px;
-    /* display: none; */
+    display: none;
 }
 
 #view-btn a {
@@ -206,7 +218,7 @@ p {
 footer {
     background-color: black;
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
     padding: 5% 10% 10%;
 }
 
@@ -255,4 +267,127 @@ footer div ul a {
 
 .social-media>p>a {
     color: gainsboro;
+}
+
+/* --------------media query apply------------- */
+
+/* ----------1. tablet device ---------*/
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+    /* --------main------ */
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ------------main menu------------ */
+
+    .main-menu-part {
+        background-color: rgba(243, 236, 236, 0.5);
+        height: 200px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .main-menus {
+        height: 200px;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .main-menu {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    /* .main-menu-part {
+        background-color: black;
+        height: 282px;
+        width: 282px;
+        border-radius: 10px;
+    }
+    
+    .main-menus {
+        width: 252px;
+        height: 252px;
+        padding: 30px;
+    }
+    
+    .main-menu {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    
+    .main-menu>p {
+        background-color: white;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 2% 3%;
+        border-radius: 10px;
+        text-align: center;
+    
+    }
+    
+    .main-menu>p>a {
+        text-decoration: none;
+        color: black;
+    } */
+    /* .main-menu-part {
+        display: flex;
+        flex-direction: column;
+    } */
+    /* ---------------blog------------------ */
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* -----------mathces---------- */
+    .mathces {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ----------view button---------- */
+    #view-btn {
+        display: block;
+    }
+
+}
+
+/* ----------2. mobile  device---------- */
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        /* min-height: 80vh; */
+    }
+
+    footer div ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mathces {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
