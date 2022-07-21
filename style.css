@@ -283,7 +283,7 @@ footer div ul a {
     /* ------------main menu------------ */
 
     .main-menu-part {
-        background-color: rgba(243, 236, 236, 0.5);
+        background-color: white;
         height: 200px;
         width: 100%;
         border-radius: 10px;
@@ -303,45 +303,21 @@ footer div ul a {
         margin-top: 20px;
     }
 
-    /* .main-menu-part {
-        background-color: black;
-        height: 282px;
-        width: 282px;
-        border-radius: 10px;
-    }
-    
-    .main-menus {
-        width: 252px;
-        height: 252px;
-        padding: 30px;
-    }
-    
-    .main-menu {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: 20px;
-    }
-    
     .main-menu>p {
-        background-color: white;
+        background-color: #DD0000;
         font-size: 20px;
         font-weight: 600;
         padding: 2% 3%;
         border-radius: 10px;
         text-align: center;
-    
+
     }
-    
+
     .main-menu>p>a {
         text-decoration: none;
-        color: black;
-    } */
-    /* .main-menu-part {
-        display: flex;
-        flex-direction: column;
-    } */
+        color: white;
+    }
+
     /* ---------------blog------------------ */
     .blogs {
         display: grid;
