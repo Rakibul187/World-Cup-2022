@@ -153,13 +153,7 @@ p {
     margin-right: 10px;
 }
 
-/* -----------------upcoming match style section----------- */
-#upcoming-match:active {
 
-    color: forestgreen;
-    background-color: #DD0000;
-
-}
 
 #blog:active {
     background-color: #DD0000;
@@ -304,18 +298,13 @@ footer div ul a {
     }
 
     .main-menu>p {
-        background-color: #DD0000;
+        background-color: #DD0000 !;
         font-size: 20px;
         font-weight: 600;
         padding: 2% 3%;
         border-radius: 10px;
         text-align: center;
 
-    }
-
-    .main-menu>p>a {
-        text-decoration: none;
-        color: white;
     }
 
     /* ---------------blog------------------ */
